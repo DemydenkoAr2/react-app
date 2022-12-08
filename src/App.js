@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ToDoList from "./components/ToDoList/ToDoList";
+import FastCompany from "./components/FastCompany/FastCompany";
+import Clock from "./components/Clock/Clock";
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+      <h1>
+        React
+      </h1>
+      <div className="ToDoList-container">
+        <ToDoList/>
+      </div>
+      {/* <div className="Clock-container">
+        <Clock/>
+      </div> */}
+      {/* <div className="FastCompany-container">
+        <FastCompany/>
+      </div> */}
+   </div>
   );
-}
+};
 
 export default App;
